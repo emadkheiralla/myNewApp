@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <h1 id="welcome-msg">Welcome to My Comp Tech Assesment</h1>
+    <div *ngFor="let item of items; let  i = index" class="col-md-4">
+      <div class="my-card m-2 p-2">
+        <div class="max-content mt-1">{{item.title}}</div>
+        <div class="max-content mt-1">{{item.url}}</div>
+        <div class="max-content mt-3 mb-2"><img [src]="item.thumbnailUrl" alt="thumbnail + {{i}}" width="100" height="100"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet />
